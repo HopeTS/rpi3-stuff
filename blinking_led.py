@@ -4,13 +4,6 @@ from time import sleep
 # This script is a basic test of GPIO, it makes an LED connected to GPIO14
 # and ground blink on and off for 10 seconds.
 
-
-
-
-
-
-
-
 if __name__ == "__main__":
 
     # Script vars
