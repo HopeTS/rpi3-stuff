@@ -6,7 +6,7 @@ import RPi.GPIO as GPIO
 app = Flask(__name__)
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(out_pin, GPIO.OUT, initial = GPIO.LOW)
+GPIO.setup(8, GPIO.OUT, initial = GPIO.LOW)
 
 def led_blink():
     out_pin = 8
