@@ -6,14 +6,14 @@ from time import sleep
 '''
 
 # global vars
-global yellow_led_pin
-global blue_led_pin
+yellow_led_pin = 8
+blue_led_pin = 11
 
 ''' Configure GPIO and pins '''
 def setup():
     # LED pin numbers
-    yellow_led_pin = 8
-    blue_led_pin = 11
+    global yellow_led_pin = 8
+    global blue_led_pin = 11
 
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup([yellow_led_pin, blue_led_pin], GPIO.OUT, initial = GPIO.LOW)
