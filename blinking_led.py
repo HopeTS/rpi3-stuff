@@ -19,11 +19,13 @@ def alternate_circuit():
     if (current_pin_state == 0):
         print "Turning LED on..."
         GPIO.output(out_pin, GPIO.HIGH)
+        current_pin_state = 1
 
     # Turn current off
     else:
         print "Turning LED off..."
         GPIO.output(out_pin, GPIO.LOW)
+        current_pin_state = 0
 
 
 
