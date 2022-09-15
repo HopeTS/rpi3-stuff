@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # Alternating blinking cycles
     for j in range(maximum_cycles):
         sleep(0.5)
-        print "Cycle number:", i
+        print "Cycle number:", j 
         # Turn current on
         if (current_pin_state == 0):
             print "Turning LED on..."
