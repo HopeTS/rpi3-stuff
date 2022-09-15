@@ -41,7 +41,7 @@ if __name__ == "__main__":
         sleep(1)
 
     # Alternating blinking cycles
-    for (j in range(maximum_cycles)):
+    for j in range(maximum_cycles):
         sleep(0.5)
         print "Cycle number:", i
         alternate_circuit()
