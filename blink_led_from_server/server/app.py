@@ -14,7 +14,7 @@ def led_blink():
     blink_cycles = 30
 
     for i in range(blink_cycles):
-        if (current_pin_state = 0):
+        if (current_pin_state == 0):
             GPIO.output(out_pin, GPIO.HIGH)
             current_pin_state = 1
         
