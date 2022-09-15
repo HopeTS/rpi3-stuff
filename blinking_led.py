@@ -13,13 +13,13 @@ from time import sleep
 
 if __name__ == "__main__":
 
-    # Configure GPIO
-    GPIO.setmode(GPIO.BOARD)
-    GPIO.setup(out_pin, GPIO.OUT, initial = GPIO.LOW)
-
     # Script vars
     out_pin = 8             # The pin sending the current
     current_pin_state = 0   # 0 = low, 1 = high
+
+    # Configure GPIO
+    GPIO.setmode(GPIO.BOARD)
+    GPIO.setup(out_pin, GPIO.OUT, initial = GPIO.LOW)
     maximum_cycles = 20     # number of times current alternates
 
     # Script output start
