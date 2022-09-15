@@ -6,8 +6,8 @@ import RPi.GPIO as GPIO
 app = Flask(__name__)
 
 # Configure GPIO
-out_pin = 8                 # The pin sending the current
-current_pin_state = 0       # 0 = LOW, 1 = HIGH  
+global out_pin = 8                 # The pin sending the current
+global current_pin_state = 0       # 0 = LOW, 1 = HIGH  
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(out_pin, GPIO.OUT, initial = GPIO.LOW)
 
@@ -29,4 +29,5 @@ def led_blink()
 @app.route("/")
 def hello_world():
     print("Home page accessed")
+    led_blink()
     return "<p>hello world</p>"
